@@ -453,6 +453,101 @@ label {
   height: 39px;
 }
 
+/* ======= Introduction Section ======= */
+.introduction-section {
+  padding-top: 90px;
+}
+.introduction-section .title {
+  margin-bottom: 30px;
+}
+.introduction-section .love-icon {
+  font-size: 32px;
+  width: 55px;
+  display: inline-block;
+  color: #f4af9c;
+  vertical-align: middle;
+}
+.introduction-section .cols-wrapper {
+  margin-bottom: 45px;
+}
+.introduction-section .col-inner {
+  padding: 60px 30px;
+  background: #f5f5f5;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.introduction-section .subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.introduction-section .intro {
+  margin-bottom: 30px;
+  color: #786b67;
+}
+.introduction-section .meta-list {
+  font-size: 16px;
+  display: inline-block;
+}
+.introduction-section .meta-list li {
+  margin-bottom: 15px;
+}
+.introduction-section .meta-list .list-link {
+  padding-left: 55px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.introduction-section .action-wrapper {
+  margin-bottom: 90px;
+}
+.countdown-box {
+  margin-bottom: 60px;
+}
+.countdown-box span {
+  display: inline-block;
+  margin-left: 5px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: normal;
+}
+.countdown-box span:first-child {
+  margin-left: 0;
+}
+.countdown-box span.number {
+  font-size: 38px;
+  display: block;
+  color: #ef8a6e;
+  font-weight: bold;
+}
+.countdown-box span.unit {
+  font-size: 22px;
+  display: block;
+  color: #786b67;
+}
+.map-container {
+  height: 460px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 5px;
+  border: 1px solid #eeeeee;
+  font-family: arial sans-serif;
+}
+.map-container .note {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.map-container .map-title {
+  font-size: 24px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .modal .modal-dialog {
