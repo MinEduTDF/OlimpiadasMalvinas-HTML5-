@@ -293,7 +293,7 @@ label {
 }
 /* ======= Header ======= */
 .header {
-  background: #413a38;
+  background: #365865;
   color: #fff;
 }
 /* ====== Nav ======= */
@@ -372,12 +372,12 @@ label {
 /* ======= Hero Section ======= */
 .hero-section {
   margin-top: 55px;
-  background: #262220 url('../images/hero-bg.jpg') no-repeat 50% top;
+  background: #262220 url('../images/fondo.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 760px;
+  height: 600px;
   position: relative;
 }
 .curve-holder {
@@ -403,9 +403,9 @@ label {
   background: rgba(0, 0, 0, 0.6);
   color: rgba(255, 255, 255, 0.85);
   padding: 30px;
-  padding-top: 90px;
+  padding-top: 20px;
   padding-bottom: 60px;
-  height: 760px;
+  height: 600px;
 }
 .hero-box .date {
   font-size: 28px;
@@ -420,12 +420,12 @@ label {
   opacity: 0.85;
 }
 .headline .names {
-  font-size: 76px;
+  font-size: 65px;
   margin-bottom: 20px;
 }
 .headline .statement {
   font-size: 36px;
-  margin-bottom: 45px;
+/* margin-bottom: 45px; */
 }
 .headline .statement-text {
   display: inline-block;
@@ -439,8 +439,8 @@ label {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  width: 34px;
-  height: 39px;
+  width: 25px;
+  height: 25px;
 }
 .headline .swirl-right {
   display: inline-block;
@@ -449,8 +449,8 @@ label {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  width: 34px;
-  height: 39px;
+  width: 25px;
+  height: 25px;
 }
 
 /* ======= Introduction Section ======= */
@@ -669,7 +669,7 @@ label {
     width: 470px;
   }
   .headline .statement {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
