@@ -66,7 +66,7 @@ a.btn:focus {
 }
 a.btn-primary,
 .btn-primary {
-  background: #f4af9c;
+  background: #f39c12;
   border: none;
   color: #fff;
   padding: 15px 45px;
@@ -322,7 +322,7 @@ label {
   float: left;
 }
 .navbar-toggle .icon-bar {
-  background-color: #f4af9c;
+  background-color: #f39c12;
   height: 3px;
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
@@ -452,7 +452,6 @@ label {
   width: 25px;
   height: 25px;
 }
-
 /* ======= Introduction Section ======= */
 .introduction-section {
   padding-top: 90px;
@@ -507,47 +506,126 @@ label {
 .introduction-section .action-wrapper {
   margin-bottom: 90px;
 }
-.countdown-box {
+/* ======= Description Section ======= */
+.description-section {
+  background: #413a38 url('../images/description-bg.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.description-section .container {
+  position: relative;
+}
+.description-box .title {
   margin-bottom: 60px;
 }
-.countdown-box span {
-  display: inline-block;
-  margin-left: 5px;
-  min-width: 100px;
-  text-align: center;
-  font-weight: normal;
+.description-box .content-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  text-align: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
-.countdown-box span:first-child {
-  margin-left: 0;
+.description-carousel .item {
+  min-height: 500px;
+  padding: 15px;
 }
-.countdown-box span.number {
-  font-size: 38px;
-  display: block;
-  color: #ef8a6e;
+.description-carousel .item-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 15px;
   font-weight: bold;
 }
-.countdown-box span.unit {
-  font-size: 22px;
-  display: block;
+.description-carousel .carousel-indicators {
+  bottom: 0;
+}
+.description-carousel .carousel-indicators li {
+  background: #a99f9c;
+  border-color: #a99f9c;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.description-carousel .carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #413a38;
+  border-color: #413a38;
+}
+.description-carousel .love-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.description-carousel .icon-jar {
+  font-size: 40px;
+}
+.description-carousel .icon-glasses {
+  font-size: 42px;
+}
+/* ======= Documents Section ======= */
+.documents-section {
+  padding-top: 90px;
+}
+.documents-section .title {
+  margin-bottom: 30px;
+}
+.documents-section .love-icon {
+  font-size: 32px;
+  width: 55px;
+  display: inline-block;
+  color: #f4af9c;
+  vertical-align: middle;
+}
+.documents-section .cols-wrapper {
+  margin-bottom: 45px;
+}
+.documents-section .col-inner {
+  padding: 60px 30px;
+  background: #f5f5f5;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.documents-section .subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.documents-section .intro {
+  margin-bottom: 30px;
   color: #786b67;
 }
-.map-container {
-  height: 460px;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  padding: 5px;
-  border: 1px solid #eeeeee;
-  font-family: arial sans-serif;
-}
-.map-container .note {
-  margin-bottom: 5px;
+.documents-section .meta-list {
   font-size: 16px;
+  display: inline-block;
 }
-.map-container .map-title {
-  font-size: 24px;
+.documents-section .meta-list li {
+  margin-bottom: 15px;
 }
-
+.documents-section .meta-list .list-link {
+  padding-left: 55px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.documents-section .action-wrapper {
+  margin-bottom: 90px;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .modal .modal-dialog {
