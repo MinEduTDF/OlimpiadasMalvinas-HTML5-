@@ -17,6 +17,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (min-width: 992px) {
+.col-md-push-5 {
+    left: 46% !important;
+  }
+}
+
 p {
   margin-bottom: 15px;
   line-height: 1.5;
@@ -28,6 +35,8 @@ a {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
+
+
 a:hover,
 a:active {
   text-decoration: underline;
