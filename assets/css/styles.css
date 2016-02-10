@@ -117,6 +117,17 @@ a.btn-primary:focus,
   color: #fff;
   outline: none;
 }
+
+.am-wrapper{
+  float:left;
+  position:relative;
+  overflow:hidden;
+}
+.am-wrapper img{
+  position:absolute;
+  outline:none;
+}
+
 .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
