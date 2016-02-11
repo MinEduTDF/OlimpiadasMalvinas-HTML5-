@@ -750,6 +750,41 @@ label {
 .blueimp-gallery > .close {
   color: #f4af9c !important;
 }
+/* ======= Comments Section ======= */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+  background: #fff;
+}
+.comments-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f39c12 url('../images/heart-pattern.png') repeat center top;
+}
+.comments-section .title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.comments-container {
+  max-width: 760px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.fb-comments {
+  background: #fff;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
