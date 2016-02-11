@@ -55,7 +55,7 @@
                         <li class="nav-item"><a class="scrollto" href="#documents">Documentación</a></li>                  
                         <li class="nav-item"><a class="scrollto" href="#gallery">Galería</a></li>
                         <li class="nav-item"><a class="scrollto" href="#comments">Comentarios</a></li>
-                        <li class="nav-item"><a href="#" data-toggle="modal" data-target="#rsvp-modal">Inscripción</a></li>
+                        <li class="nav-item"><a href="#" data-toggle="modal" data-target="#rsvp-modal">Pre-Inscripción</a></li>
                     </ul>
                 </div>
             </nav>
@@ -262,6 +262,75 @@
                             <i class="glyphicon glyphicon-chevron-right"></i>
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  	<!-- RSVP Modal -->
+    <div id="rsvp-modal" class="modal modal-rsvp"  tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 id="rsvpModalLabel" class="modal-title text-center">
+                        <span class="title script display-block"><span class="title-deco-left"></span><span class="title-text">Pre-Inscripción</span><span class="title-deco-right"></span></span>
+                        <span class="subtitle display-block">¡ Participa del Concurso ! <br> Por favor completa los siguientes datos</span>
+                    </h2>
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <form id="rsvp-form" class="rsvp-form form" method="post" action="#">     
+                        <div id="form-messages" class="text-center"></div>                  
+                        <div class="row text-left">   
+                            <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="cnamei">Institución</label>
+                                    <input type="text" class="form-control" id="cnamei" name="namei" placeholder="Nombre completo" minlength="2"  aria-required="true" required>
+                              </div>
+                            </div>
+                            <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="cnamep">Nombre</label>
+                                    <input type="text" class="form-control" id="cnamep" name="namep" placeholder="Tu nombre completo" minlength="2"  aria-required="true" required>
+                                </div>
+                            </div>                    
+                            <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="cemail">Email</label>
+                                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Tu email de contacto" aria-required="true" required>
+                                </div>
+                            </div>
+                            <div class="events-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="ccategories">¿En cuáles categorías participarán?</label>
+                                    <select class="form-control" id="ccategories" name="categories" aria-required="true" required>                       
+                                        <option value="" selected>Por favor seleccione</option> 
+                                        <option value="Category All">Todas las Catogorías</option>
+                                        <option value="Category Only 1 y 2">Categorías 1 y 2</option>
+                                        <option value="Category Only 1 y 3">Categorías 1 y 3</option>
+                                        <option value="Category Only 2 y 3">Categorías 2 y 3</option>
+                                    </select>     
+                                </div>       
+                            </div>      
+                            <div class="guestinfo-group col-md-12 col-sm-12 col-xs-12 form-group" style="display:none">
+                                <div class="form-group-inner">
+                                    <label for="cparticipants">¿Apróximadamente cuántos alumnos  de su institución participarán?</label>
+                                    <textarea class="form-control" id="cparticipants" name="participants" placeholder="Por favor indique un número" required></textarea>
+                                </div>
+                            </div>                                                   
+                            <div class="message-group col-md-12 col-sm-12 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="cmessage">Información adicional</label>
+                                    <textarea class="form-control" id="cmessage" name="message" placeholder="Ej. "></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Pre-Inscripción</button>
+                            </div>   
+                            <div class="additional-info col-md-12 col-sm-12 col-xs-12 text-center">
+                                Si tienes dudas por favor comuníquese con nosotros. Puede enviarnos un email a <a href="#">concursoMalvinas2016@gmail.com</a> o llamarnos a 0133 123455
+                            </div>
+                         </div>
+                    </form>
                 </div>
             </div>
         </div>
