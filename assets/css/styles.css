@@ -118,6 +118,10 @@ a.btn-primary:focus,
   outline: none;
 }
 
+.slide {
+transition-duration: 200 ms !important;
+}
+
 .am-wrapper{
   float:left;
   position:relative;
