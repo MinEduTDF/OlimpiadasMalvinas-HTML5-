@@ -645,7 +645,7 @@ label {
   margin-bottom: 5px;
 }
 .documents-section .action-wrapper {
-  margin-bottom: 90px;
+  margin-bottom: 34px;
 }
 /* ======= Gallery Section ======= */
 .gallery-section {
@@ -752,6 +752,12 @@ label {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+
+  .description-section {
+    background: transparent;
+    background-color: #365865;
+  }
+
   .modal .modal-dialog {
     width: auto;
   }
@@ -760,14 +766,14 @@ label {
   }
   .header {
     padding-bottom: 5px;
-    background: #413a38;
+
   }
   .header .nav > li > a {
     color: #fff;
   }
   .header .nav > li > a:focus,
   .header .nav > li > a:hover {
-    color: #f4af9c;
+    color: #CC8E22;
   }
   .title {
     font-size: 42px;
@@ -801,7 +807,7 @@ label {
     font-size: 60px;
   }
   .hero-box {
-    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
     padding-left: 15px;
     padding-right: 15px;
   }
