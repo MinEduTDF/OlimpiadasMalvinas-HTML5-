@@ -24,7 +24,7 @@ $(document).ready(function() {
     
     $('input, textarea').placeholder();
 
-    /* ======= Instagram ======= */
+       /* ======= Instagram ======= */
     //Instafeed.js - add Instagram photos to your website
     //Ref: http://instafeedjs.com/
 
