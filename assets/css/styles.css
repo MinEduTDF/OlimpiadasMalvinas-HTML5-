@@ -119,7 +119,7 @@ a.btn-primary:focus,
 }
 
 .slide {
-transition-duration: 200 ms !important;
+transition-duration: 200ms !important;
 }
 
 .am-wrapper{
