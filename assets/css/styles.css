@@ -17,6 +17,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (min-width: 992px) {
+.col-md-push-5 {
+    left: 46% !important;
+  }
+}
+
 p {
   margin-bottom: 15px;
   line-height: 1.5;
@@ -28,6 +35,8 @@ a {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
+
+
 a:hover,
 a:active {
   text-decoration: underline;
@@ -71,6 +80,7 @@ a.btn-primary,
   color: #fff;
   padding: 15px 45px;
   text-transform: uppercase;
+  margin: 10px;
 }
 a.btn-primary.active:hover,
 .btn-primary.active:hover,
@@ -88,7 +98,7 @@ a.btn-primary.active:focus,
 }
 a.btn-primary:hover,
 .btn-primary:hover {
-  background: #f19c85;
+  background: #365865;
   border: none;
   color: #fff;
   outline: none;
@@ -107,6 +117,17 @@ a.btn-primary:focus,
   color: #fff;
   outline: none;
 }
+
+.am-wrapper{
+  float:left;
+  position:relative;
+  overflow:hidden;
+}
+.am-wrapper img{
+  position:absolute;
+  outline:none;
+}
+
 .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -188,7 +209,7 @@ label {
   z-index: 30;
 }
 #topcontrol:hover {
-  background: #f7c2b3;
+  background: #365865;
 }
 #topcontrol .fa {
   position: relative;
@@ -471,7 +492,7 @@ label {
 }
 .introduction-section .col-inner {
   padding: 60px 30px;
-  background: #f5f5f5;
+  background: #EFEFEF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -591,7 +612,7 @@ label {
 }
 .documents-section .col-inner {
   padding: 60px 30px;
-  background: #f5f5f5;
+  background: #EFEFEF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
