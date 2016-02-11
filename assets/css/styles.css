@@ -172,7 +172,7 @@ textarea {
   -webkit-appearance: none;
 }
 label {
-  color: #f19c85;
+	color: #e67e22;
 }
 .form-group {
   margin-bottom: 30px;
@@ -784,6 +784,131 @@ label {
 }
 .fb-comments {
   background: #fff;
+}
+/* ======= Modal ======= */
+.modal .modal-dialog {
+  width: 760px;
+}
+.modal .modal-title {
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 26px;
+}
+.modal .modal-title .title {
+  margin-bottom: 15px;
+}
+.modal .modal-title .subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  color: #786b67;
+}
+.modal .modal-body {
+  padding: 30px 60px;
+}
+.modal .modal-header {
+  border: none;
+}
+.modal .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 0;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  color: #413a38;
+  text-shadow: none;
+}
+.modal .close:hover {
+  color: #413a38;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.modal .error {
+  color: #E65348;
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-weight: 300;
+}
+.modal .event-col {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.modal .col-title {
+  color: #786b67;
+}
+.modal .col-subtitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.modal .section-title {
+  color: #ef8a6e;
+  font-size: 16px;
+}
+.modal .section-title .fa {
+  display: inline-block;
+  margin-right: 5px;
+}
+.modal .figure-container {
+  margin-bottom: 30px;
+}
+.modal .figure-container img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.modal .facilities-list {
+  margin-bottom: 30px;
+}
+.modal .facilities-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.modal .facilities-list li .fa {
+  color: #f4af9c;
+  display: inline-block;
+  margin-right: 5px;
+}
+.modal .facilities-list li .details {
+  font-size: 14px;
+  color: #786b67;
+  padding-left: 25px;
+  display: inline-block;
+}
+/* RSVP Modal */
+.modal-rsvp .modal-title {
+  margin-bottom: 0;
+}
+.modal-rsvp textarea.form-control {
+  height: 120px;
+}
+.modal-rsvp .radio-group {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal-rsvp .radio-group label {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.modal-rsvp .additional-info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #786b67;
+}
+/* Direction Modal */
+.direction-modal .modal-dialog {
+  width: 80%;
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
