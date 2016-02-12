@@ -93,23 +93,22 @@ $(document).ready(function() {
     /* Ref: http://jqueryvalidation.org/documentation/ */   
     $(".rsvp-form").validate({
         messages: {
-            name: {
-                required: 'Por favor ingresa tu nombre' //You can customise this message
+            cue: {
+                required: 'Por favor ingrese el CUE de la institución' //You can customise this message
+            },
+			namei: {
+                required: 'Por favor ingrese el nombre completo de la institución' //You can customise this message
+            },
+            namep: {
+                required: 'Por favor ingrese su nombre completo' //You can customise this message
+            },
+            tel: {
+                required: 'Por favor ingrese su teléfono de contacto' //You can customise this message
             },
             email: {
-                required: 'Por favor ingresa tu email' //You can customise this message
-            },
-            events: {
-                required: '¿Asistirás?' //You can customise this message
-            },
-            guests: {
-                required: '¿Con cuántos invitados vendrás?' //You can customise this message
-            },
-            guestinfo: {
-                required: 'Por favor ingresa los nombres de los invitados' //You can customise this message
+                required: 'Por favor ingrese su email de contacto' //You can customise this message
             },
         }
     });
-  
 
 });

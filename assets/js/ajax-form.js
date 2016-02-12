@@ -17,7 +17,7 @@ $(function() {
 			// Serialize the form data.
 			var formData = $(form).serialize();
 
-			var url = 'https://script.google.com/macros/s/AKfycbzOhctZMGroTUPdKuKeXQ9TLv8xevehkHIB3N73czTHF_NnqgI/exec'; /* Debes agregar aquí el vínculo hacia el aplicativo web ejecutable */
+			var url = 'https://script.google.com/macros/s/AKfycbzeWTvwl1qhOMP_MG-b_oIxuYsZ-ddhT4eyyWGoU-AFoTSOzOY/exec'; /* Debes agregar aquí el vínculo hacia el aplicativo web ejecutable */
 	        // show the loading 
 	        $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
 	        var jqxhr = $.post(url, formData, function(data) {
@@ -26,15 +26,14 @@ $(function() {
 				$(formMessages).addClass('alert alert-success');
 
 				// Set the message text.
-				$(formMessages).text("Gracias! Hemos registrado tu confirmación de asistencia.");
+				$(formMessages).text("Gracias! Hemos registrado su Pre-Inscripción.");
 
 				// Clear the form.
-				$('#cname').val('');
+				$('#ccue').val('');
+				$('#cnamei').val('');
+				$('#cnamep').val('');
+				$('#ctel').val('');
 				$('#cemail').val('');
-				$('#cevents').val('');
-				$('#cguests').val('');
-				$('#cguestinfo').val('');
-				$('#cmessage').val('');
 	        }).fail(function(data) {
 	            $(formMessages).removeClass('alert alert-success');
 				$(formMessages).addClass('alert alert-danger');

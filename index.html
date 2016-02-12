@@ -283,53 +283,41 @@
                         <div class="row text-left">   
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="cnamei">Institución</label>
-                                    <input type="text" class="form-control" id="cnamei" name="namei" placeholder="Nombre completo" minlength="2"  aria-required="true" required>
-                              </div>
+                                    <label for="ccuei">CUE de la Institución</label>
+                                    <input type="text" class="form-control" id="ccuei" name="cue" placeholder="Ingrese el CUE de la institución" minlength="2"  aria-required="true" required>
+                                </div>
                             </div>
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="cnamep">Nombre</label>
-                                    <input type="text" class="form-control" id="cnamep" name="namep" placeholder="Tu nombre completo" minlength="2"  aria-required="true" required>
-                                </div>
-                            </div>                    
-                            <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
-                                <div class="form-group-inner">
-                                    <label for="cemail">Email</label>
-                                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Tu email de contacto" aria-required="true" required>
+                                    <label for="cnamei">Nombre de la Institución</label>
+                                    <input type="text" class="form-control" id="cnamei" name="namei" placeholder="Ingrese el nombre completo de la institución" minlength="2"  aria-required="true" required>
                                 </div>
                             </div>
-                            <div class="events-group col-md-6 col-sm-6 col-xs-12 form-group">
+                            <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="ccategories">¿En cuáles categorías participarán?</label>
-                                    <select class="form-control" id="ccategories" name="categories" aria-required="true" required>                       
-                                        <option value="" selected>Por favor seleccione</option> 
-                                        <option value="Category All">Todas las Catogorías</option>
-                                        <option value="Category Only 1 y 2">Categorías 1 y 2</option>
-                                        <option value="Category Only 1 y 3">Categorías 1 y 3</option>
-                                        <option value="Category Only 2 y 3">Categorías 2 y 3</option>
-                                    </select>     
-                                </div>       
-                            </div>      
-                            <div class="guestinfo-group col-md-12 col-sm-12 col-xs-12 form-group" style="display:none">
-                                <div class="form-group-inner">
-                                    <label for="cparticipants">¿Apróximadamente cuántos alumnos  de su institución participarán?</label>
-                                    <textarea class="form-control" id="cparticipants" name="participants" placeholder="Por favor indique un número" required></textarea>
+                                  <label for="cnamep">Nombre del contacto institucional</label>
+                                  <input type="text" class="form-control" id="cnamep" name="namep" placeholder="Ingrese su nombre completo" minlength="2"  aria-required="true" required>
                                 </div>
-                            </div>                                                   
-                            <div class="message-group col-md-12 col-sm-12 col-xs-12 form-group">
+                            </div>
+                            <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="cmessage">Información adicional</label>
-                                    <textarea class="form-control" id="cmessage" name="message" placeholder="Ej. "></textarea>
+                                    <label for="ctel">Teléfono del contacto institucional</label>
+                                  <input type="tel" class="form-control" id="ctel" name="tel" placeholder="Ingrese su teléfono de contacto" aria-required="true" required>
+                                </div>
+                            </div>
+                            <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <label for="cemail">Email del contacto institucional</label>
+                                  <input type="email" class="form-control" id="cemail" name="email" placeholder="Ingrese su email de contacto" aria-required="true" required>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                <button type="submit" class="btn btn-block btn-primary">Pre-Inscripción</button>
+                                <button type="submit" class="btn btn-block btn-primary">ENVIAR</button>
                             </div>   
                             <div class="additional-info col-md-12 col-sm-12 col-xs-12 text-center">
-                                Si tienes dudas por favor comuníquese con nosotros. Puede enviarnos un email a <a href="#">concursoMalvinas2016@gmail.com</a> o llamarnos a 0133 123455
+                                Si tienes dudas por favor comuníquese con nosotros. Puede enviarnos un email a <a href="#">concursomalvinastdf@gmail.com</a> o llamarnos a 2901-445221
                             </div>
-                         </div>
+                      </div>
                     </form>
                 </div>
             </div>
@@ -348,12 +336,16 @@
   <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
   <script type="text/javascript" src="assets/plugins/packery.pkgd.min.js"></script>  
   <script type="text/javascript" src="assets/plugins/instafeed.min.js"></script>
+  <!--//form related JS -->
+  <script type="text/javascript" src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
   <!--//Image Gallery related JS -->
   <script type="text/javascript" src="assets/plugins/Gallery/js/jquery.blueimp-gallery.min.js"></script>
   <script type="text/javascript" src="assets/plugins/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
   <!-- Form iOS fix -->
   <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
   <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
+  <!--Ajax Form -->
+  <script type="text/javascript" src="assets/js/ajax-form.js"></script>
   <!-- Animations-->
   <script type="text/javascript" src="assets/js/animations.js"></script> 
   <script type="text/javascript" src="assets/js/main.js"></script> 
