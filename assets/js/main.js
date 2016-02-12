@@ -32,8 +32,8 @@ $(document).ready(function() {
     var feed = new Instafeed({
             limit: 28,
             get: 'tagged',
-            tagName: 'filmweddingphotographer', /* Remember to use a unique hastag for the wedding */
-            clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3', /* IMPORTANT: REPLACE THE DEMO CLIENTID */
+            tagName: 'concursomalvinas2016', /* Remember to use a unique hastag for the wedding */
+            clientId: '2c57abf2d4b240beacee198677ca4507', /* IMPORTANT: REPLACE THE DEMO CLIENTID */
             resolution: 'thumbnail',
             template: '<a class="instagram-item item" href="{{link}}" target="_blank"><img class="img-responsive" src="{{image}}" /></a>',
             sortBy: 'most-liked',
