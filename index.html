@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Descargados -->
-    <link rel="stylesheet" href="assets/plugins/love-icons/style.css">
     <link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
     <link rel="stylesheet" href="assets/plugins/Gallery/css/blueimp-gallery.min.css">
     <!-- Creados -->
@@ -24,6 +23,41 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+        <style type="text/css">
+            #simple-masonry {
+                border-top: solid 1px #ccc;
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .masonry-column {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .item {
+                position: relative;
+                padding: 15px;
+                background-color: #cde;
+                margin: 2px 1px 0 1px;
+            }
+            .item h3 {
+                color: #fff;
+                font-weight: 200;
+            }
+            .item .columnbox .item {
+                background-color: #ccc;
+                padding: 0px !important;
+                margin: 1px;
+            }
+            .item .columnbox .column {
+                background-color: #fff;
+                padding: 0px !important;
+            }
+            #mocha-stats .progress {
+                height: 40px;
+                background-color: transparent;
+                box-shadow: none;
+            }
+        </style>
 <body>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -181,6 +215,8 @@
         </div>
     </section>
    <!-- GALERÍAS -->
+
+
     <section id="gallery" class="gallery-section section">
     <!--Aquí va la integración con la cuenta de las olimpiadas en Instagram.--> 
           <div class="container text-center">
@@ -334,9 +370,10 @@
             </div>
         </div>
     </div>
-  <!-- Main Javascript -->
+  <!-- Main Javascript --> 
   <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="assets/plugins/jquery.montage.js"></script>
+    <script type="text/javascript" src="assets/plugins/simple-masonry.js"></script>
   <script type="text/javascript" src="assets/js/galeria.js"></script>
   <script type="text/javascript" src="assets/js/animations.js"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

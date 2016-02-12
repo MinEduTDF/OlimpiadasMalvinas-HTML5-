@@ -31,7 +31,9 @@ $(document).ready(function() {
     var loadButton = document.getElementById('load-more');
     var feed = new Instafeed({
             limit: 28,
-            get: 'tagged',
+            get: 'concursomalvinastdf',
+            userID: '2934481847',
+            accessToken: '2934481847.cf0499d.e7919595979d4de3bdf1d70656f10e8f',
             tagName: 'concursomalvinas2016', /* Remember to use a unique hastag for the wedding */
             clientId: '2c57abf2d4b240beacee198677ca4507', /* IMPORTANT: REPLACE THE DEMO CLIENTID */
             resolution: 'thumbnail',
