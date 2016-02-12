@@ -765,7 +765,7 @@ label {
 .comments-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #EFEFEF url('../images/heart-pattern.png') repeat center top;
+  background: #EFEFEF;
 }
 .comments-section .title {
   font-size: 24px;
