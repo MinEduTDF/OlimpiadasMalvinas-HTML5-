@@ -71,7 +71,7 @@ $(document).ready(function() {
     });
     
     
-    /* ======= RSVP Form (Dependent form field) ============ */
+  /* ======= RSVP y Consultations Forms (Dependent form field) ============ */
     $('#cguests').on("change", function(){
         
         if ($(this).val() == "") {
@@ -87,11 +87,9 @@ $(document).ready(function() {
             $('#cguestinfo').val(''); //Clear data
             console.log('Has guests');
         }
-
-       
     });
 
-    /* ======= jQuery form validator ======= */ 
+    /* ======= RSVP jQuery form validator ======= */ 
     /* Ref: http://jqueryvalidation.org/documentation/ */   
     $(".rsvp-form").validate({
         messages: {
@@ -112,5 +110,26 @@ $(document).ready(function() {
             },
         }
     });
-
 });
+
+    /* ======= Consultations jQuery form validator ======= */ 
+    /* Ref: http://jqueryvalidation.org/documentation/ */   
+    $(".consultations-form").validate({
+        messages: {
+            cue: {
+                required: 'Por favor ingrese el CUE de la institución' //You can customise this message
+            },
+			namei: {
+                required: 'Por favor ingrese el nombre completo de la institución' //You can customise this message
+            },
+            namep: {
+                required: 'Por favor ingrese su nombre completo' //You can customise this message
+            },
+            tel: {
+                required: 'Por favor ingrese su teléfono de contacto' //You can customise this message
+            },
+            email: {
+                required: 'Por favor ingrese su email de contacto' //You can customise this message
+            },
+        }
+  });
