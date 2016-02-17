@@ -44,8 +44,9 @@
                         <li class="nav-item"><a class="scrollto" href="#description">Descripción</a></li>
                         <li class="nav-item"><a class="scrollto" href="#documents">Documentación</a></li>                  
                         <li class="nav-item"><a class="scrollto" href="#gallery">Galería</a></li>
+                        <li class="nav-item"><a href="#" data-toggle="modal" data-target="#calendar-modal">Cronograma</a></li>
                         <li class="nav-item"><a href="#" data-toggle="modal" data-target="#consultations-modal">Consulta</a></li>
-                        <li class="nav-item"><a href="#" data-toggle="modal" data-target="#rsvp-modal">Pre-Inscripción</a></li>
+                        <!--<li class="nav-item"><a href="#" data-toggle="modal" data-target="#rsvp-modal">Pre-Inscripción</a></li>-->
                     </ul>
                 </div>
             </nav>
@@ -80,7 +81,7 @@
                     <div class="col-inner">
                         <h4 class="subtitle">Características Generales</h4>
                         <p class="intro">Concurso de carácter nacional, consistente en la elaboración y presentación por parte de estudiantes de los tres niveles (inicial, primario y secundario), de una producción visual elaborada con herramientas informáticas libres, disponibles en la plataforma Huayra. </p>
-                    </div>
+                     </div>
                 </div>
                 <div class="reception-col col-md-4 col-sm-4 col-xs-12">
                     <div class="col-inner">
@@ -275,36 +276,36 @@
                 </div><!--//modal-header-->
                 <div class="modal-body">
                     <form id="rsvp-form" class="rsvp-form form" method="post" action="#">     
-                        <div id="form-messages" class="text-center"></div>                  
+                        <div id="formrsvp-messages" class="text-center"></div>                  
                         <div class="row text-left">   
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="ccuei">CUE de la Institución</label>
-                                    <input type="text" class="form-control" id="ccuei" name="cue" placeholder="Ingrese el CUE de la institución" minlength="2"  aria-required="true" required>
+                                    <label for="rcue">CUE de la Institución</label>
+                                    <input type="text" class="form-control" id="rcue" name="cue" placeholder="Ingrese el CUE de la institución" minlength="2"  aria-required="true" required>
                                 </div>
                             </div>
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="cnamei">Nombre de la Institución</label>
-                                    <input type="text" class="form-control" id="cnamei" name="namei" placeholder="Ingrese el nombre completo de la institución" minlength="2"  aria-required="true" required>
+                                    <label for="rnamei">Nombre de la Institución</label>
+                                    <input type="text" class="form-control" id="rnamei" name="namei" placeholder="Ingrese el nombre completo de la institución" minlength="2"  aria-required="true" required>
                                 </div>
                             </div>
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                  <label for="cnamep">Nombre del contacto institucional</label>
-                                  <input type="text" class="form-control" id="cnamep" name="namep" placeholder="Ingrese su nombre completo" minlength="2"  aria-required="true" required>
+                                  <label for="rnamep">Nombre del contacto institucional</label>
+                                  <input type="text" class="form-control" id="rnamep" name="namep" placeholder="Ingrese su nombre completo" minlength="2"  aria-required="true" required>
                                 </div>
                             </div>
                             <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="ctel">Teléfono del contacto institucional</label>
-                                  <input type="tel" class="form-control" id="ctel" name="tel" placeholder="Ingrese su teléfono de contacto" aria-required="true" required>
+                                    <label for="rtel">Teléfono del contacto institucional</label>
+                                  <input type="tel" class="form-control" id="rtel" name="tel" placeholder="Ingrese su teléfono de contacto" aria-required="true" required>
                                 </div>
                             </div>
                             <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="cemail">Email del contacto institucional</label>
-                                  <input type="email" class="form-control" id="cemail" name="email" placeholder="Ingrese su email de contacto" aria-required="true" required>
+                                    <label for="remail">Email del contacto institucional</label>
+                                  <input type="email" class="form-control" id="remail" name="email" placeholder="Ingrese su email de contacto" aria-required="true" required>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
@@ -319,7 +320,7 @@
             </div>
         </div>
     </div>
-  	<!-- Consultations Modal -->
+  	<!-- CONSULTATIONS Modal -->
     <div id="consultations-modal" class="modal modal-consultations"  tabindex="-1" role="dialog" aria-labelledby="consultationsModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -332,12 +333,12 @@
                 </div><!--//modal-header-->
                 <div class="modal-body">
                     <form id="consultations-form" class="consultations-form form" method="post" action="#">     
-                        <div id="form-messages" class="text-center"></div>                  
+                        <div id="formconsultations-messages" class="text-center"></div>                  
                         <div class="row text-left">   
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
                                 <div class="form-group-inner">
-                                    <label for="ccuei">CUE de la Institución</label>
-                                    <input type="text" class="form-control" id="ccuei" name="cue" placeholder="Ingrese el CUE de la institución" minlength="2"  aria-required="true" required>
+                                    <label for="ccue">CUE de la Institución</label>
+                                    <input type="text" class="form-control" id="ccue" name="cue" placeholder="Ingrese el CUE de la institución" minlength="2"  aria-required="true" required>
                                 </div>
                             </div>
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
@@ -379,6 +380,27 @@
             </div>
         </div>
     </div>
+    <!-- CALENDAR Modal-->
+    <div id="calendar-modal" class="calendar-modal modal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="calendarModalLabel">Cronograma de actividades</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=vp9cphknmcph4cekrkdsajc408%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    <!--<div class="row">
+                        <div class="event-col col-md-6 col-sm-6 col-xs-12">
+                            <h4 class="col-title text-center">Inicio</h4>
+                            <div class="event-col col-md-6 col-sm-6 col-xs-12">
+                            <h4 class="col-title text-center">Reception de Trabajos</h4>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
   <!-- Main Javascript --> 
   <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="assets/plugins/jquery.montage.js"></script>
@@ -401,7 +423,8 @@
   <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
   <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
   <!--Ajax Form -->
-  <script type="text/javascript" src="assets/js/ajax-form.js"></script>
+  <script type="text/javascript" src="assets/js/ajax-formrsvp.js"></script>
+  <script type="text/javascript" src="assets/js/ajax-formconsult.js"></script>
   <!-- Animations-->
   <script type="text/javascript" src="assets/js/animations.js"></script> 
   <script type="text/javascript" src="assets/js/main.js"></script> 

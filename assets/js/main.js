@@ -24,7 +24,7 @@ $(document).ready(function() {
     
     $('input, textarea').placeholder();
 
-       /* ======= Instagram ======= */
+    /* ======= Instagram ======= */
     //Instafeed.js - add Instagram photos to your website
     //Ref: http://instafeedjs.com/
 
@@ -70,25 +70,6 @@ $(document).ready(function() {
         });
     });
     
-    
-  /* ======= RSVP y Consultations Forms (Dependent form field) ============ */
-    $('#cguests').on("change", function(){
-        
-        if ($(this).val() == "") {
-            $('.guestinfo-group').slideUp(); //hide
-            console.log('not selected');
-        } else if ($(this).val() == 'No Guests' ) {
-            $('.guestinfo-group').slideUp(); //hide
-            console.log('No guests');
-            $('#cguestinfo').val('No Guests'); //Pass data to the field so mailer.php can send the form.
-            
-        } else {
-            $('.guestinfo-group').slideDown(); //show
-            $('#cguestinfo').val(''); //Clear data
-            console.log('Has guests');
-        }
-    });
-
     /* ======= RSVP jQuery form validator ======= */ 
     /* Ref: http://jqueryvalidation.org/documentation/ */   
     $(".rsvp-form").validate({
@@ -112,7 +93,7 @@ $(document).ready(function() {
     });
 });
 
-    /* ======= Consultations jQuery form validator ======= */ 
+    /* ======= CONSULTATIONS jQuery form validator ======= */ 
     /* Ref: http://jqueryvalidation.org/documentation/ */   
     $(".consultations-form").validate({
         messages: {

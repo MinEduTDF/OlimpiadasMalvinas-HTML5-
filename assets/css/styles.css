@@ -930,6 +930,10 @@ label {
   margin-bottom: 30px;
   color: #786b67;
 }
+/* Calendar Modal */
+.calendar-modal .modal-dialog {
+  width: 80%;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
