@@ -496,6 +496,7 @@ label {
 }
 .introduction-section .col-inner {
   padding: 60px 30px;
+  margin: 10px;
   background: #EFEFEF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
