@@ -54,15 +54,15 @@ a.btn {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  border-radius: 30px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 .btn .fa,
 a.btn .fa {
@@ -75,10 +75,10 @@ a.btn:focus {
 }
 a.btn-primary,
 .btn-primary {
-  background: #f39c12;
+  background: #52A2C1;
   border: none;
   color: #fff;
-  padding: 15px 45px;
+  padding: 15px 20px;
   text-transform: uppercase;
   margin: 10px;
 }
