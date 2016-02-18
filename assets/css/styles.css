@@ -531,8 +531,8 @@ label {
 .introduction-section .action-wrapper {
   margin-bottom: 90px;
 }
-/* ======= Description Section ======= */
-.description-section {
+/* ======= Resources Section ======= */
+.resources-section {
   background: #413a38 url('../images/monumento_malvinas.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -541,13 +541,13 @@ label {
   padding-top: 60px;
   padding-bottom: 90px;
 }
-.description-section .container {
+.resources-section .container {
   position: relative;
 }
-.description-box .title {
+.resources-box .title {
   margin-bottom: 60px;
 }
-.description-box .content-container {
+.resources-box .content-container {
   background: rgba(255, 255, 255, 0.85);
   padding: 30px;
   text-align: left;
@@ -560,61 +560,61 @@ label {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.description-carousel .item {
+.resources-carousel .item {
   min-height: 500px;
   padding: 15px;
 }
-.description-carousel .item-title {
+.resources-carousel .item-title {
   font-size: 24px;
   margin-bottom: 30px;
   margin-top: 15px;
   font-weight: bold;
 }
-.description-carousel .carousel-indicators {
+.resources-carousel .carousel-indicators {
   bottom: 0;
 }
-.description-carousel .carousel-indicators li {
+.resources-carousel .carousel-indicators li {
   background: #a99f9c;
   border-color: #a99f9c;
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
   opacity: 0.8;
 }
-.description-carousel .carousel-indicators li.active {
+.resources-carousel .carousel-indicators li.active {
   width: 12px;
   height: 12px;
   margin: 0;
   background-color: #413a38;
   border-color: #413a38;
 }
-.description-carousel .love-icon {
+.resources-carousel .love-icon {
   display: inline-block;
   margin-right: 10px;
 }
-.description-carousel .icon-jar {
+.resources-carousel .icon-jar {
   font-size: 40px;
 }
-.description-carousel .icon-glasses {
+.resources-carousel .icon-glasses {
   font-size: 42px;
 }
-/* ======= Documents Section ======= */
-.documents-section {
+/* ======= News Section ======= */
+.news-section {
   padding-top: 90px;
 }
-.documents-section .title {
+.news-section .title {
   margin-bottom: 30px;
 }
-.documents-section .love-icon {
+.news-section .love-icon {
   font-size: 32px;
   width: 55px;
   display: inline-block;
   color: #f4af9c;
   vertical-align: middle;
 }
-.documents-section .cols-wrapper {
+.news-section .cols-wrapper {
   margin-bottom: 45px;
 }
-.documents-section .col-inner {
+.news-section .col-inner {
   padding: 60px 30px;
   background: #EFEFEF;
   -webkit-border-radius: 10px;
@@ -626,29 +626,29 @@ label {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.documents-section .subtitle {
+.news-section .subtitle {
   font-size: 28px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 30px;
 }
-.documents-section .intro {
+.news-section .intro {
   margin-bottom: 30px;
   color: #786b67;
 }
-.documents-section .meta-list {
+.news-section .meta-list {
   font-size: 16px;
   display: inline-block;
 }
-.documents-section .meta-list li {
+.news-section .meta-list li {
   margin-bottom: 15px;
 }
-.documents-section .meta-list .list-link {
+.news-section .meta-list .list-link {
   padding-left: 55px;
   font-size: 16px;
   margin-bottom: 5px;
 }
-.documents-section .action-wrapper {
+.news-section .action-wrapper {
   margin-bottom: 34px;
 }
 /* ======= Gallery Section ======= */
