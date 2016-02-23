@@ -29,7 +29,7 @@ p {
   line-height: 1.5;
 }
 a {
-  color: #f4af9c;
+  color: #f39c12;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -40,12 +40,12 @@ a {
 a:hover,
 a:active {
   text-decoration: underline;
-  color: #f19c85;
+  color: #f39c12;
 }
 a:focus {
-  text-decoration: none;
-  color: #f19c85;
-  outline: none;
+	text-decoration: none;
+	color: #f39c12;
+	outline: none;
 }
 .btn,
 a.btn {
@@ -933,6 +933,10 @@ label {
 }
 /* Calendar Modal */
 .calendar-modal .modal-dialog {
+  width: 80%;
+}
+/* News Modal */
+.news-modal .modal-dialog {
   width: 80%;
 }
 /* Extra small devices (phones, less than 768px) */
