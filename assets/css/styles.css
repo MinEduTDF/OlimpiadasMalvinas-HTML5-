@@ -122,6 +122,9 @@ a.btn-primary:focus,
   outline: none;
 }
 
+.logogob {
+  padding-top: 65px;
+}
 .slide {
 transition-duration: 200ms !important;
 }
@@ -447,7 +450,7 @@ label {
   color: rgba(255, 255, 255, 0.85);
   margin-left: 30px;
   padding: 30px;
-  padding-top: 20px;
+  padding-top: 2px;
   padding-bottom: 60px;
   height: 600px;
 }
