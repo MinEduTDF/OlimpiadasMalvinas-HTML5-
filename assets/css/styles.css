@@ -529,6 +529,21 @@ label {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.swiper-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+.swiper-slide {
+        font-size: 18px;
+}
+
 .introduction-section .subtitle {
   font-size: 28px;
   font-weight: bold;

@@ -18,6 +18,7 @@
     <!-- Creados -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/custom.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -130,6 +131,42 @@
                   <div class="resources-box col-md-7 col-sm-12 col-xs-12 col-md-push-5 col-sm-push-0 col-xs-push-0">
                       <h3 class="title script"><span class="title-recursos">Recursos</span></h3>
                       <div class="content-container text-left">
+
+
+                             <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                                      <h4 class="subtitle text-center">Secuencias Didácticas Orientadoras</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                                      <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                                      <hr>
+                                      <div class="container text-left">  
+                                        <ul class="nav nav-tabs" role="tablist">
+                                           <li role="presentation" class="active"><a href="#" aria-controls="" role="tab" data-toggle="tab">VER :</a></li>
+                                           <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">NIVEL 1</a></li>
+                                           <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">NIVEL 2</a></li>
+                                           <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">NIVEL 3</a></li>
+                                        </ul>
+                                      </div>  
+
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
                           <div id="resources-carousel" class="resources-carousel carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
                                   <li data-target="#resources-carousel" data-slide-to="0" class="active"></li>
@@ -462,5 +499,15 @@
   <!-- Animations-->
   <script type="text/javascript" src="assets/js/animations.js"></script> 
   <script type="text/javascript" src="assets/js/main.js"></script> 
+  <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+   <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
+    <!-- /Initialize Swiper -->
 </body>
 </html>
