@@ -74,18 +74,18 @@ $(document).ready(function() {
     /* Ref: http://jqueryvalidation.org/documentation/ */   
     $(".rsvp-form").validate({
         messages: {
-            cue: {
+            /*cue: {
                 required: 'Por favor ingrese el CUE de la institución' //You can customise this message
-            },
+            },*/
 			namei: {
                 required: 'Por favor ingrese el nombre completo de la institución' //You can customise this message
             },
             namep: {
                 required: 'Por favor ingrese su nombre completo' //You can customise this message
             },
-            tel: {
+            /*tel: {
                 required: 'Por favor ingrese su teléfono de contacto' //You can customise this message
-            },
+            },*/
             email: {
                 required: 'Por favor ingrese su email de contacto' //You can customise this message
             },
