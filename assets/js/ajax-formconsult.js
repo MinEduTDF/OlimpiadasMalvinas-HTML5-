@@ -29,10 +29,10 @@ $(function() {
 				$(formMessages).text("Gracias! Hemos registrado su Consulta. Pronto nos pondremos en contacto con usted.");
 
 				// Clear the form.
-				$('#ccue').val('');
+				//$('#ccue').val('');
 				$('#cnamei').val('');
 				$('#cnamep').val('');
-				$('#ctel').val('');
+				//$('#ctel').val('');
 				$('#cemail').val('');
 				$('#cmessage').val('');
 	        }).fail(function(data) {
