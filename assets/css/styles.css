@@ -6,6 +6,8 @@
  * Twitter: @3rdwave_themes
 */
 /* ======= Base ======= */
+
+
 html,
 body {
   height: 100%;
@@ -120,6 +122,10 @@ a.btn-primary:focus,
   border: none;
   color: #fff;
   outline: none;
+}
+
+.imagenes {
+      margin-left: 9%;
 }
 
 .logogob {
