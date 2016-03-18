@@ -124,6 +124,14 @@ a.btn-primary:focus,
   outline: none;
 }
 
+.leer {
+  display:none;
+}
+
+.leer.active {
+  display: block;
+}
+
 .imagenes {
       margin-left: 9%;
 }

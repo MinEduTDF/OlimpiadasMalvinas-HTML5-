@@ -1,24 +1,32 @@
 $(document).ready(function() {
-   
+
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#header', offset: 100});
     
     /* ======= ScrollTo ======= */
     $('a.scrollto').on('click', function(e){
-        
+
         //store hash
         var target = this.hash;
-                
+
         e.preventDefault();
         
-		$('body').scrollTo(target, 800, {offset: -55, 'axis':'y'});
+        $('body').scrollTo(target, 800, {offset: -55, 'axis':'y'});
         //Collapse mobile menu after clicking
-		if ($('.navbar-collapse').hasClass('in')){
-			$('.navbar-collapse').removeClass('in').addClass('collapse');
-		}
-		
-	}); 
-     
+        if ($('.navbar-collapse').hasClass('in')){
+           $('.navbar-collapse').removeClass('in').addClass('collapse');
+       }
+
+   }); 
+ });
+
+    /******* LEER MAS ********/
+    $('.boton-leer').on('click', function() {
+      $('.leer').stop().addClass('active');
+      $(this).hide();
+  });
+    /******* FIN - LEER MAS ********/
+
     /* ======= jQuery Placeholder ======= */
     /* Ref: https://github.com/mathiasbynens/jquery-placeholder */
     
@@ -28,33 +36,55 @@ $(document).ready(function() {
     //Instafeed.js - add Instagram photos to your website
     //Ref: http://instafeedjs.com/
 
-    var loadButton = document.getElementById('load-more');
-    var feed = new Instafeed({
-            limit: 28,
-            get: 'user',
-            userId: 2934481847,
-            accessToken: '2934481847.2c57abf.ba1dd82d555b444c82410e405ede07b7',
-            tagName: 'concursomalvinas2016', /* Remember to use a unique hastag for the wedding */
-            clientId: '2c57abf2d4b240beacee198677ca4507', /* IMPORTANT: REPLACE THE DEMO CLIENTID */
-            resolution: 'thumbnail',
-            template: '<a class="instagram-item item" href="{{link}}" target="_blank"><img class="img-responsive" src="{{image}}" /></a>',
-            sortBy: 'most-liked',
-          // every time we load more, run this function
-          after: function() {
-            // disable button if no more results to load
-            if (!this.hasNext()) {
-              loadButton.setAttribute('disabled', 'disabled');
+    // var loadButton = document.getElementById('load-more');
+    // var feed = new Instafeed({
+    //         limit: 28,
+    //         get: 'user',
+    //         userId: 2934481847,
+    //         accessToken: '2934481847.2c57abf.ba1dd82d555b444c82410e405ede07b7',
+    //         tagName: 'concursomalvinas2016', /* Remember to use a unique hastag for the wedding */
+    //         clientId: '2c57abf2d4b240beacee198677ca4507', /* IMPORTANT: REPLACE THE DEMO CLIENTID */
+    //         resolution: 'thumbnail',
+    //         template: '<a class="instagram-item item" href="{{link}}" target="_blank"><img class="img-responsive" src="{{image}}" /></a>',
+    //         sortBy: 'most-liked',
+    //       // every time we load more, run this function
+    //       after: function() {
+    //         // disable button if no more results to load
+    //         if (!this.hasNext()) {
+    //           loadButton.setAttribute('disabled', 'disabled');
+    //         }
+    //       },
+    // });
+
+$(function() {
+    $.ajax({
+        type: "GET",
+        dataType: "jsonp",
+        cache: false,
+        url: "https://api.instagram.com/v1/tags/concursomalvinas2016/media/recent/?access_token=2934481847.2c57abf.ba1dd82d555b444c82410e405ede07b7",
+        success: function(data) {
+            console.log(data);
+            for (var i = 0; i < 15; i++) {
+             if(data.data[i].user.id != 2934481847)  {
+                var date = new Date(parseInt(data.data[i].created_time) * 1000);
+                $(".instagramfeed").append("\
+                    <img src='" + data.data[i].images.standard_resolution.url +"' />\
+                    <div>"+date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()+"</div>\
+                    <div><strong>"+data.data[i].user.username+"</strong> "+data.data[i].caption.text+"</div><br /><br />\
+                    ");
+                date = null;
             }
-          },
-    });
-
+        }
+    }
+});
+});
     // bind the load more button
-    loadButton.addEventListener('click', function() {
-      feed.next();
-    });
+    // loadButton.addEventListener('click', function() {
+    //   feed.next();
+    // });
 
-    // run our feed!
-    feed.run();
+    // // run our feed!
+    // feed.run();
     
     /* ===== Packery ===== */
     //Ref: http://packery.metafizzy.co/
@@ -77,7 +107,7 @@ $(document).ready(function() {
             /*cue: {
                 required: 'Por favor ingrese el CUE de la institución' //You can customise this message
             },*/
-			namei: {
+            namei: {
                 required: 'Por favor ingrese el nombre completo de la institución' //You can customise this message
             },
             namep: {
@@ -91,16 +121,14 @@ $(document).ready(function() {
             },
         }
     });
-});
-
-    /* ======= CONSULTATIONS jQuery form validator ======= */ 
-    /* Ref: http://jqueryvalidation.org/documentation/ */   
-    $(".consultations-form").validate({
-        messages: {
-            cue: {
+/* ======= CONSULTATIONS jQuery form validator ======= */ 
+/* Ref: http://jqueryvalidation.org/documentation/ */   
+$(".consultations-form").validate({
+    messages: {
+        cue: {
                 required: 'Por favor ingrese el CUE de la institución' //You can customise this message
             },
-			namei: {
+            namei: {
                 required: 'Por favor ingrese el nombre completo de la institución' //You can customise this message
             },
             namep: {
@@ -113,4 +141,4 @@ $(document).ready(function() {
                 required: 'Por favor ingrese su email de contacto' //You can customise this message
             },
         }
-  });
+    });
