@@ -13,7 +13,7 @@
       success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
           if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-            $(".imagenes").append("<a href="+ folder + val +" data-gallery><img class='img-rounded' style='float:left; margin:10px;' src="+ folder + val +" width='200' height='200'> </div>");
+            $(".imagenes").append("<a href="+ folder + val +" data-gallery><img class='img-rounded' style='float:left; margin:10px;' src="+ folder + val +" width='200' height='200'> </a>");
           } 
         });
       }

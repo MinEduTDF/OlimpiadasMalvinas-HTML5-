@@ -124,6 +124,10 @@ a.btn-primary:focus,
   outline: none;
 }
 
+#load-more {
+  position: absolute;
+}
+
 .leer {
   display:none;
 }
@@ -136,6 +140,9 @@ a.btn-primary:focus,
       margin-left: 9%;
 }
 
+.instagramfeed  {
+  padding-left: 9%;
+}
 .logogob {
   padding-top: 65px;
 }

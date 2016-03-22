@@ -55,29 +55,30 @@ $(document).ready(function() {
     //         }
     //       },
     // });
-
-$(function() {
+var dir = "https://api.instagram.com/v1/tags/concursomalvinas2016/media/recent/?access_token=2253563781.137bf98.bd1c3693d2b84f80a7ab8d661f641437";
+$(insta(dir));
+function insta(dir) {
     $.ajax({
         type: "GET",
         dataType: "jsonp",
         cache: false,
-        url: "https://api.instagram.com/v1/tags/concursomalvinas2016/media/recent/?access_token=2934481847.2c57abf.ba1dd82d555b444c82410e405ede07b7",
+        url: dir,
         success: function(data) {
-            console.log(data);
-            for (var i = 0; i < 15; i++) {
-             if(data.data[i].user.id != 2934481847)  {
-                var date = new Date(parseInt(data.data[i].created_time) * 1000);
-                $(".instagramfeed").append("\
-                    <img src='" + data.data[i].images.standard_resolution.url +"' />\
-                    <div>"+date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()+"</div>\
-                    <div><strong>"+data.data[i].user.username+"</strong> "+data.data[i].caption.text+"</div><br /><br />\
-                    ");
-                date = null;
-            }
+                console.log(data);
+                next_url = data.pagination.next_url;
+            for (var i = 0; i < data.data.length; i++) {
+                var imagen = data.data[i].images.low_resolution.url;
+                $(".instagramfeed").append("<a href="+ imagen +" data-gallery><img class='img-rounded' style='float:left; margin:10px;' src=" + imagen +" width='200' height='200'> </div>");
+           
+            }   
+                $('#load-more').on('click', function() {
+                    console.log("loading: " + next_url)
+                    insta(next_url);
+                });         
+
         }
-    }
 });
-});
+}
     // bind the load more button
     // loadButton.addEventListener('click', function() {
     //   feed.next();
