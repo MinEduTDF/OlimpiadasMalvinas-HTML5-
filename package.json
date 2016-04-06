@@ -1,0 +1,23 @@
+{
+  "name": "concurso",
+  "version": "1.0.0",
+  "description": "Desarrollo de sitio web del concurso Malvinas Argentinas utilizando html5-css3/bootstrap-jquery e integración con redes sociales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publicar": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinEduTDF/OlimpiadasMalvinas-HTML5-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinEduTDF/OlimpiadasMalvinas-HTML5-/issues"
+  },
+  "homepage": "https://github.com/MinEduTDF/OlimpiadasMalvinas-HTML5-#readme",
+  "devDependencies": {
+    "gh-pages": "^0.11.0"
+  }
+}
