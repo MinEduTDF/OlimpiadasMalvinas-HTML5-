@@ -499,16 +499,16 @@ label {
   height: 600px;
 }
 .hero-box .date {
-  font-size: 28px;
-  color: #413a38;
-  background: transparent url('../images/ribbon-lime.svg') no-repeat center top;
-  height: 126px;
-  padding-top: 8px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  -webkit-opacity: 0.85;
-  -moz-opacity: 0.85;
-  opacity: 0.85;
+	font-size: 15px;
+	color: #413a38;
+	background: transparent url('../images/ribbon-lime.svg') no-repeat center top;
+	height: 126px;
+	padding-top: 8px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	-webkit-opacity: 0.85;
+	-moz-opacity: 0.85;
+	opacity: 0.85;
 }
 .headline .names {
   font-size: 65px;
