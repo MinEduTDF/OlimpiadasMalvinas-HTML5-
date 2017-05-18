@@ -144,7 +144,7 @@ a.btn-primary:focus,
   padding-left: 9%;
 }
 .logogob {
-  padding-top: 65px;
+  padding-top: 0px;
 }
 .slide {
 transition-duration: 200ms !important;
@@ -383,7 +383,7 @@ label {
 }
 /* ======= Header ======= */
 .header {
-  background: #365865;
+  background: #386f9a;
   color: #fff;
 }
 /* ====== Nav ======= */
@@ -443,7 +443,7 @@ label {
 }
 /* ======= Footer ======= */
 .footer {
-  background: #365865;
+  background: #386f9a;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
 }
@@ -493,26 +493,11 @@ label {
   background: rgba(0, 0, 0, 0.6);
   color: rgba(255, 255, 255, 0.85);
   margin-left: 30px;
-  padding: 30px;
   padding-top: 2px;
   padding-bottom: 60px;
   height: 600px;
 }
-.hero-box .date {
-	font-size: 13px;
-	color: #413a38;
-	height: 126px;
-	padding-top: 20px;
-	font-weight: bold;
-	margin-bottom: 15px;
-	-webkit-opacity: 0.85;
-	-moz-opacity: 0.85;
-	opacity: 0.85;
-	background-color: transparent;
-	background-image: url(../images/ribbon-lime.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
+
 .headline .names {
   font-size: 65px;
   margin-bottom: 20px;
@@ -1026,7 +1011,7 @@ label {
 
   .description-section {
     background: transparent;
-    background-color: #365865;
+    background-color: #386f9a;
   }
 
   .modal .modal-dialog {
